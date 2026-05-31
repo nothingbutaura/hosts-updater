@@ -1,0 +1,13 @@
+# Landian section
+127.0.0.1 omegle.com
+127.0.0.1 ome.tv
+127.0.0.1 tinychat.com
+127.0.0.1 chatroulette.com
+127.0.0.1 chatrandom.com
+
+
+127.0.0.1 www.omegle.com
+127.0.0.1 www.ome.tv
+127.0.0.1 www.tinychat.com
+127.0.0.1 www.chatroulette.com
+127.0.0.1 www.chatrandom.com

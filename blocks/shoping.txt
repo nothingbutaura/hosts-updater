@@ -1,0 +1,33 @@
+# Shopping Sites
+127.0.0.1 amazon.com
+127.0.0.1 amazon.ca
+127.0.0.1 shopee.com
+127.0.0.1 lazada.com
+127.0.0.1 carousell.ph
+127.0.0.1 ebay.com
+127.0.0.1 walmart.com
+127.0.0.1 etsy.com
+127.0.0.1 target.com
+127.0.0.1 cost.co
+127.0.0.1 bestbuy.com
+127.0.0.1 newegg.com
+127.0.0.1 wish.com
+127.0.0.1 wayfair.com
+
+
+127.0.0.1 www.amazon.com
+127.0.0.1 www.amazon.ca
+127.0.0.1 www.shopee.com
+127.0.0.1 www.lazada.com
+127.0.0.1 www.carousell.ph
+127.0.0.1 www.ebay.com
+127.0.0.1 www.walmart.com
+127.0.0.1 www.etsy.com
+127.0.0.1 www.target.com
+127.0.0.1 www.cost.co
+127.0.0.1 www.bestbuy.com
+127.0.0.1 www.newegg.com
+127.0.0.1 www.wish.com
+127.0.0.1 www.wayfair.com
+
+
