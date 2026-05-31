@@ -66,8 +66,7 @@ app.post("/add", (req, res) => {
 	}
 	file = sfile.join("\n")
 	fs.writeFileSync(filePath, file, "utf-8")
-	res.send("done");
-
+	res.send("Data Addes successfully");
 });
 
 app.get("/add", (req, res) => {
@@ -78,29 +77,17 @@ app.get("/add", (req, res) => {
 		.filter(f => fs.statSync(path.join(blocksDir, f)).isFile())
 		.map(f => {
 			const name = path.parse(f).name;
-			if (!name.includes('template')) {
+			if (!name.includes("template")) {
 				return `<option value="${name}">${name}</option>`;
 			}
+			return "";
 		})
 		.join("");
 
-	const html = `
-        <form method="POST" action="/add">
-            <label>Category:</label>
-            <select name="category">
-                ${options}
-            </select>
+	let html = fs.readFileSync(path.join(__dirname, "index.html"), "utf8");
 
-            <br/><br/>
-
-            <label>Data:</label>
-            <input type="text" name="data" required />
-
-            <br/><br/>
-
-            <button type="submit">Add</button>
-        </form>
-    `;
+	// inject options into placeholder
+	html = html.replace("{{OPTIONS}}", options);
 
 	res.send(html);
 });

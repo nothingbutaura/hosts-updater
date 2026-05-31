@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hosts Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+						background: #111827;
+            padding: 25px;
+            border-radius: 12px;
+            width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+						justify-content: center;
+						align-items: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: #1f2937;
+            color: white;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #3b82f6;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        #result {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Hosts Manager</h2>
+    <div id="result"></div>
+
+    <select id="category">
+      {{OPTIONS}}
+    </select>
+
+    <textarea id="data" placeholder="tinder.com, match.com"></textarea>
+
+    <button onclick="submitData()">Add Domains</button>
+		<p>Developed by BSIT Student Assistants</p>
+
+</div>
+
+<script>
+    async function submitData() {
+        const category = document.getElementById("category").value;
+        const data = document.getElementById("data").value;
+
+        const res = await fetch("/add", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ category, data })
+        });
+
+        const text = await res.text();
+        document.getElementById("result").innerText = text;
+    }
+</script>
+
+</body>
+</html>
