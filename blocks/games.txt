@@ -42,6 +42,8 @@
 127.0.0.1 tetr.io
 127.0.0.1 tetris.com
 127.0.0.1 play.tetris.com
+127.0.0.1 apps.microsoft.com
+127.0.0.1 riotgames.com
 
 
 127.0.0.1 www.kongregate.com
@@ -85,3 +87,4 @@
 127.0.0.1 www.addictinggames.com
 127.0.0.1 www.tetr.io
 127.0.0.1 www.tetris.com
+127.0.0.1 www.riotgames.com
