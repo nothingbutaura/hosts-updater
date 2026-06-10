@@ -64,7 +64,6 @@
             background: #2563eb;
         }
 
-<<<<<<< HEAD
         button:disabled {
             background: #64748b;
             cursor: not-allowed;
@@ -86,8 +85,6 @@
             to { transform: rotate(360deg); }
         }
 
-=======
->>>>>>> refs/remotes/origin/main
         #result {
             margin-top: 10px;
             text-align: center;
@@ -108,18 +105,13 @@
 
     <textarea id="data" placeholder="tinder.com, match.com"></textarea>
 
-<<<<<<< HEAD
     <button id="submitBtn" onclick="submitData()">Add Domains</button>
-=======
-    <button onclick="submitData()">Add Domains</button>
->>>>>>> refs/remotes/origin/main
 		<p>Developed by BSIT Student Assistants</p>
 
 </div>
 
 <script>
     async function submitData() {
-<<<<<<< HEAD
         const btn = document.getElementById("submitBtn");
         const category = document.getElementById("category").value;
         const dataInput = document.getElementById("data");
@@ -162,21 +154,6 @@
             btn.disabled = false;
             btn.innerHTML = "Add Domains";
         }
-=======
-        const category = document.getElementById("category").value;
-        const data = document.getElementById("data").value;
-
-        const res = await fetch("/add", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ category, data })
-        });
-
-        const text = await res.text();
-        document.getElementById("result").innerText = text;
->>>>>>> refs/remotes/origin/main
     }
 </script>
 
