@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hosts Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+						background: #111827;
+            padding: 25px;
+            border-radius: 12px;
+            width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+						justify-content: center;
+						align-items: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: #1f2937;
+            color: white;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #3b82f6;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        button:disabled {
+            background: #64748b;
+            cursor: not-allowed;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        #result {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Hosts Manager</h2>
+    <div id="result"></div>
+
+    <select id="category">
+      {{OPTIONS}}
+    </select>
+
+    <textarea id="data" placeholder="tinder.com, match.com"></textarea>
+
+    <button id="submitBtn" onclick="submitData()">Add Domains</button>
+		<p>Developed by BSIT Student Assistants</p>
+
+</div>
+
+<script>
+    async function submitData() {
+        const btn = document.getElementById("submitBtn");
+        const category = document.getElementById("category").value;
+        const dataInput = document.getElementById("data");
+        const data = dataInput.value;
+        const result = document.getElementById("result");
+
+        if (!data.trim()) {
+            result.innerText = "Please enter some domains.";
+            result.style.color = "#ef4444";
+            return;
+        }
+
+        // Loading state
+        btn.disabled = true;
+        btn.innerHTML = '<span class="spinner"></span>Updating...';
+        result.innerText = "";
+
+        try {
+            const res = await fetch("/add", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ category, data })
+            });
+
+            const text = await res.text();
+            result.innerText = text;
+            
+            if (res.ok) {
+                result.style.color = "#22c55e";
+                dataInput.value = ""; // Clear textarea on success
+            } else {
+                result.style.color = "#ef4444";
+            }
+        } catch (error) {
+            result.innerText = "An error occurred.";
+            result.style.color = "#ef4444";
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = "Add Domains";
+        }
+    }
+</script>
+
+</body>
+</html>
