@@ -1,0 +1,23 @@
+# Torrent Sites
+127.0.0.1 yts.mx
+127.0.0.1 1337x.to
+127.0.0.1 nyaa.si
+127.0.0.1 rarbg.to
+127.0.0.1 thepiratebay.org
+127.0.0.1 fitgirl-repacks.site
+127.0.0.1 skidrowreloaded.com
+127.0.0.1 igg-games.com
+127.0.0.1 eztv.re
+127.0.0.1 torrentgalaxy.to
+
+
+127.0.0.1 www.yts.mx
+127.0.0.1 www.1337x.to
+127.0.0.1 www.nyaa.si
+127.0.0.1 www.rarbg.to
+127.0.0.1 www.thepiratebay.org
+127.0.0.1 www.fitgirl-repacks.site
+127.0.0.1 www.skidrowreloaded.com
+127.0.0.1 www.igg-games.com
+127.0.0.1 www.eztv.re
+127.0.0.1 www.torrentgalaxy.to

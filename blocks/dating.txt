@@ -1,0 +1,19 @@
+# Dating Site
+127.0.0.1 tinder.com
+127.0.0.1 match.com
+127.0.0.1 pof.com
+127.0.0.1 okcupid.com
+127.0.0.1 zoosk.com
+127.0.0.1 bumble.com
+127.0.0.1 seeking.com
+127.0.0.1 happn.com
+
+
+127.0.0.1 www.tinder.com
+127.0.0.1 www.match.com
+127.0.0.1 www.pof.com
+127.0.0.1 www.okcupid.com
+127.0.0.1 www.zoosk.com
+127.0.0.1 www.bumble.com
+127.0.0.1 www.seeking.com
+127.0.0.1 www.happn.com

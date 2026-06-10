@@ -1,0 +1,15 @@
+# Gambling Section
+127.0.0.1 bovada.lv
+127.0.0.1 betonline.ag
+127.0.0.1 lotterypost.com
+127.0.0.1 bet365.com
+127.0.0.1 flalotter.com
+127.0.0.1 lasatlantis.com
+
+
+127.0.0.1 www.bovada.lv
+127.0.0.1 www.betonline.ag
+127.0.0.1 www.lotterypost.com
+127.0.0.1 www.bet365.com
+127.0.0.1 www.flalotter.com
+127.0.0.1 www.lasatlantis.com

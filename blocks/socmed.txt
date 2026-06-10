@@ -1,0 +1,20 @@
+# Social Medias
+127.0.0.1 facebook.com
+127.0.0.1 twitter.com
+127.0.0.1 instagram.com
+127.0.0.1 reddit.com
+127.0.0.1 discord.com
+127.0.0.1 pinterest.com
+127.0.0.1 tiktok.com
+127.0.0.1 tumblr.com
+127.0.0.1 facebook.com
+
+
+127.0.0.1 www.facebook.com
+127.0.0.1 www.twitter.com
+127.0.0.1 www.instagram.com
+127.0.0.1 www.reddit.com
+127.0.0.1 www.discord.com
+127.0.0.1 www.pinterest.com
+127.0.0.1 www.tiktok.com
+127.0.0.1 www.tumblr.com

@@ -1,0 +1,43 @@
+# Porno sites
+127.0.0.1 pornhub.com
+127.0.0.1 xnxx.com
+127.0.0.1 xvideos.com
+127.0.0.1 xvideos2.com
+127.0.0.1 xvideos3.com
+127.0.0.1 hentaihaven.xxx
+127.0.0.1 hentaihaven.com
+127.0.0.1 hentaihaven.red
+127.0.0.1 hentaihaven.co
+127.0.0.1 theporndude.com
+127.0.0.1 hanime.tv
+127.0.0.1 xhamster.com
+127.0.0.1 youporn.com
+127.0.0.1 hclips.com
+127.0.0.1 porn.com
+127.0.0.1 beeg.com
+127.0.0.1 mangahentai.me
+127.0.0.1 hentaifc.com
+127.0.0.1 pinayflix.com
+127.0.0.1 pinayflix.buzz
+
+
+127.0.0.1 www.pornhub.com
+127.0.0.1 www.xnxx.com
+127.0.0.1 www.xvideos.com
+127.0.0.1 www.xvideos2.com
+127.0.0.1 www.xvideos3.com
+127.0.0.1 www.hentaihaven.xxx
+127.0.0.1 www.hentaihaven.com
+127.0.0.1 www.hentaihaven.red
+127.0.0.1 www.hentaihaven.co
+127.0.0.1 www.theporndude.com
+127.0.0.1 www.hanime.tv
+127.0.0.1 www.xhamster.com
+127.0.0.1 www.youporn.com
+127.0.0.1 www.hclips.com
+127.0.0.1 www.porn.com
+127.0.0.1 www.beeg.com
+127.0.0.1 www.mangahentai.me
+127.0.0.1 www.hentaifc.com
+127.0.0.1 www.pinayflix.com
+127.0.0.1 www.pinayflix.buzz
